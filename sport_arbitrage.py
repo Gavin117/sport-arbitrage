@@ -89,21 +89,6 @@ def check_all_games(games):
 
     return all_arbitrages
 
-x =[{'name': ['Phoenix Suns', 'Utah Jazz'], 
-    'arbitrage': [[{'site_key': 'marathonbet', 'site_nice': 'Marathon Bet', 'last_update': 1645982572, 'odds': {'h2h': [2.28, 1.77]}}, {'site_key': 'matchbook', 'site_nice': 'Matchbook', 'last_update': 1645982572, 'odds': {'h2h': [2.2, 1.8], 'h2h_lay': [2.24, 1.84]}}],
-             [{'site_key': 'marathonbet', 'site_nice': 'Marathon Bet', 'last_update': 1645982572, 'odds': {'h2h': [2.28, 1.77]}}, {'site_key': 'betfair', 'site_nice': 'Betfair', 'last_update': 1645982570, 'odds': {'h2h': [2.2, 1.8], 'h2h_lay': [2.26, 1.84]}}]]},
- {'name': ['Houston Rockets', 'Los Angeles Clippers'], 
- 'arbitrage': [[{'site_key': 'coral', 'site_nice': 'Coral', 'last_update': 1645982577, 'odds': {'h2h': [3.2, 1.36]}}, {'site_key': 'betfair', 'site_nice': 'Betfair', 'last_update': 1645982570, 'odds': {'h2h': [3.15, 1.46], 'h2h_lay': [3.2, 1.47]}}],
-         [{'site_key': 'marathonbet', 'site_nice': 'Marathon Bet', 'last_update': 1645982572, 'odds': {'h2h': [3.32, 1.38]}}, {'site_key': 'betfair', 'site_nice': 'Betfair', 'last_update': 1645982570, 'odds': {'h2h': [3.15, 1.46], 'h2h_lay': [3.2, 1.47]}}]]}, 
- {'name': ['Dallas Mavericks', 'Golden State Warriors'], 'arbitrage': [[{'site_key': 'marathonbet', 'site_nice': 'Marathon Bet', 'last_update': 1645982572, 'odds': {'h2h': [2.5, 1.66]}}, {'site_key': 'matchbook', 'site_nice': 'Matchbook', 'last_update': 1645982572, 'odds': {'h2h': [2.4, 1.71], 'h2h_lay': [2.42, 1.72]}}], 
-    [{'site_key': 'marathonbet', 'site_nice': 'Marathon Bet', 'last_update': 1645982572, 'odds': {'h2h': [2.5, 1.66]}}, {'site_key': 'betfair', 'site_nice': 'Betfair', 'last_update': 1645982570, 'odds': {'h2h': [2.4, 1.71], 'h2h_lay': [2.42, 1.72]}}]]}, 
- {'name': ['Los Angeles Lakers', 'New Orleans Pelicans'], 
- 'arbitrage': [[{'site_key': 'matchbook', 'site_nice': 'Matchbook', 'last_update': 1645982572, 'odds': {'h2h': [2.02, 1.97], 'h2h_lay': [2.04, 1.99]}}, {'site_key': 'williamhill', 'site_nice': 'William Hill', 'last_update': 1645982572, 'odds': {'h2h': [1.83, 2.0]}}]]}]
-
-def example_bet():
-    bank = 1000
-    total_outlay = (bank / 2.28) + (bank / 1.79)
-    print(f'The total outlay = {total_outlay}, from a starting balance of {bank} meaning the profit is ${bank-total_outlay} in savings!')
 
 
 if(__name__=="__main__"):
