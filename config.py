@@ -1,0 +1,3 @@
+API_KEY = ''
+
+BANKROLL = 1000
