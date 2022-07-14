@@ -3,10 +3,6 @@ import json
 import pandas as pd
 from config import BANKROLL
 
-
-#https://help.smarkets.com/hc/en-gb/articles/214058369-How-to-calculate-implied-probability-in-betting
-#https://help.smarkets.com/hc/en-gb/articles/115001175531-How-to-calculate-arbitrage-betting
-
 def calculate_arbitrage(bet1,bet2):
     imp_bet1 = (1/bet1) *100
     imp_bet2 = (1/bet2) *100
@@ -66,6 +62,3 @@ def two_way_sport(data):
         joined = list(zip(site,odd))
         match = [team,joined]
         find_arbitrage(match)
-
-
-#print(calculate_arbitrage(1.73,2.2))
