@@ -1,15 +1,14 @@
 import requests
 import json
 from config import BANKROLL
-#https://www.aussportsbetting.com/2009/01/20/arbitrage-betting-2-three-outcome-betting/#:~:text=Three%2DOutcome%20Arbitrage%20Theory&text=The%20sum%20of%20the%20inverses,that%20the%20bookmaker%20is%20taking.
 
 
 def calculate_arbitrage(home,draw,away):
     '''
     input
-    home = 2.38 #odds for outcome 1 (Everton win).
-    draw = 3.65 #odds for outcome 2 (draw)
-    away = 3.68 #odds for outcome 3 (Everton loss)
+    home = 2.38 #odds for outcome 1
+    draw = 3.65 #odds for outcome 2
+    away = 3.68 #odds for outcome 3 
 
     returns
     stakes for each bet plus total profit
@@ -75,7 +74,3 @@ def three_way_sport(data):
         joined = list(zip(site,odd))
         match = [team,joined]
         find_arbitrage(match)
-
-
-
-#print(calculate_arbitrage(3.55,3.77,2.08))
